@@ -13,6 +13,7 @@ To create a front project using new and familiar technologies, applying some pre
 - Storybook
 - Caching with React/RTK toolkit
 - TDD (vitest)
+- Normalize CSS
 - Styling with SASS
 - Apply mobile first responsive designs
 - Add user authentication

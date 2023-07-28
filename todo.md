@@ -1,6 +1,5 @@
 # To do
 
 - Install RTK and React Redux
-- Configure ESLint
-- Chec if to configure Sass
+- Check if to configure Sass
 - Normalize CSS
