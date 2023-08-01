@@ -1,30 +1,50 @@
 import React from "react";
-// import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ReactDOM from "react-dom/client";
-// import "src/index.css";
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+    Link,
+} from "react-router-dom";
+import { createRoot } from "react-dom/client";
+import "/src/App.scss";
 
 // const router = createBrowserRouter([
 //   {
 //     path: "/",
+//     element: <App />,
 //     element: <App />,
 //     // TODO - errorElement: <ErrorPage />,
 //     // TODO - check loader: rootLoader out later
 //     children: [
 //       {
 //         path: "/",
-//         element: <LandingPage test={"one"} link={"products"} />,
+//         element: <LandingPage />,
 //       },
 //       {
 //         path: "products",
-//         element: <LandingPage test={"two"} link={"/"} />,
+//         element: </>,
 //       },
 //     ],
 //   },
 // ]);
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: (
+            <div>
+                <h1>Hello World</h1>
+                <Link to="about">About Us</Link>
+            </div>
+        ),
+    },
+    {
+        path: "about",
+        element: <div>About</div>,
+    },
+]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        {/* <RouterProvider router={router} /> */}
-        <h1>test</h1>
+        <RouterProvider router={router} />
     </React.StrictMode>,
 );
