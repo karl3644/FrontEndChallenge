@@ -7,11 +7,11 @@ import {
 } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import "/src/App.scss";
+import { LandingPage } from "/src/components/Index.jsx";
 
 // const router = createBrowserRouter([
 //   {
 //     path: "/",
-//     element: <App />,
 //     element: <App />,
 //     // TODO - errorElement: <ErrorPage />,
 //     // TODO - check loader: rootLoader out later
@@ -30,12 +30,7 @@ import "/src/App.scss";
 const router = createBrowserRouter([
     {
         path: "/",
-        element: (
-            <div>
-                <h1>Hello World</h1>
-                <Link to="about">About Us</Link>
-            </div>
-        ),
+        element: <LandingPage />,
     },
     {
         path: "about",
