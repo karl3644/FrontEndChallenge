@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import "/src/App.scss";
-import { LandingPage } from "/src/components/Index.jsx";
+import LandingPage from "@/components/pages/landingPage/LandingPage.component.jsx";
 
 // const router = createBrowserRouter([
 //   {
