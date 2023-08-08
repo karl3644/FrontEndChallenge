@@ -1,5 +1,25 @@
-export default function Button({ text = "Default", onClick = () => {} }) {
-    return <button onClick={onClick}>{text}</button>;
+import PropTypes from "prop-types";
+import "@/components/common/button/Button.scss";
+
+export default function Button({
+    backgroundColor,
+    text = "Default",
+    onClick = (e) => {
+        console.log(e);
+    },
+    size = "medium",
+    type = "primary",
+}) {
+    return (
+        <button
+            type="button"
+            style={backgroundColor && { backgroundColor }}
+            className={`button ${size} ${type}`}
+            onClick={onClick}
+        >
+            <span className="buttonText">{text}</span>
+        </button>
+    );
 }
 
 // Button.propTypes = {
