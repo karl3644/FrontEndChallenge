@@ -1,8 +1,8 @@
-import Button from "@/components/common/button/Button.component.jsx";
+import AltButton from "@/components/common/altButton/AltButton.component.jsx";
 
 export default {
-    title: "Button",
-    component: Button,
+    title: "AltButton",
+    component: AltButton,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
         layout: "centered",
@@ -20,37 +20,27 @@ export default {
     },
 };
 
-export const Primary = {
+export const NavLeft = {
     args: {
-        label: "Primary",
-        type: "primary",
+        type: "navLeft",
     },
     parameters: {},
 };
-export const Secondary = {
+export const NavRight = {
     args: {
-        label: "Secondary",
-        type: "secondary",
+        type: "navRight",
     },
     parameters: {},
 };
-export const Tertiary = {
+export const Add = {
     args: {
-        label: "Tertiary",
-        type: "tertiary",
+        type: "add",
     },
     parameters: {},
 };
-export const Large = {
+export const Play = {
     args: {
-        size: "large",
-        label: "Large",
+        type: "play",
     },
-};
-
-export const Small = {
-    args: {
-        size: "small",
-        label: "Small",
-    },
+    parameters: {},
 };
