@@ -7,8 +7,11 @@ export default {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
         layout: "centered",
         backgrounds: {
-            // default: "grey",
-            values: [{ name: "grey", value: "rgb(100,100,100)" }],
+            default: "spotifyDark",
+            values: [
+                { name: "grey", value: "rgb(100,100,100)" },
+                { name: "spotifyDark", value: "rgb(18,18,18)" },
+            ],
         },
     },
     tags: ["autodocs"],
@@ -19,17 +22,23 @@ export default {
 
 export const Primary = {
     args: {
-        primary: true,
-        text: "Button",
+        label: "Primary",
     },
-    parameters: {
-        backgrounds: { default: "grey" },
-    },
+    parameters: {},
 };
 export const Secondary = {
     args: {
-        label: "Button",
+        label: "Secondary",
+        type: "secondary",
     },
+    parameters: {},
+};
+export const Tertiary = {
+    args: {
+        label: "Tertiary",
+        type: "tertiary",
+    },
+    parameters: {},
 };
 export const Large = {
     args: {
