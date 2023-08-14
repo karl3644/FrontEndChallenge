@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
-import "@/components/common/altButton/AltButton.scss";
+import "@/components/common/altButton/AltButton.module.scss";
 
 import { ReactComponent as Left } from "@/assets/svg/chevron_left_white_18dp.svg";
 import { ReactComponent as Right } from "@/assets/svg/chevron_right_white_18dp.svg";
+import { ReactComponent as Add } from "@/assets/svg/add.svg";
+import { ReactComponent as PlayArrow } from "@/assets/svg/playArrow.svg";
 
 function ButtonType({ type }) {
     if (type === "navLeft") {
@@ -11,6 +13,13 @@ function ButtonType({ type }) {
     if (type === "navRight") {
         return <Right />;
     }
+    if (type === "add") {
+        return <Add />;
+    }
+    if (type === "play") {
+        return <PlayArrow />;
+    }
+    return "";
 }
 
 export default function AltButton({
@@ -18,22 +27,28 @@ export default function AltButton({
     onClick = (e) => {
         console.log(e);
     },
+    size = "medium",
     type = "navLeft",
 }) {
     return (
         <button
             type="button"
             style={buttonStyle}
-            className={`${type}Button`}
+            className={`${type}Button ${size}`}
             onClick={onClick}
         >
             {type === "navLeft" ? (
                 <Left />
             ) : type === "navRight" ? (
                 <Right />
+            ) : type === "add" ? (
+                <Add />
+            ) : type === "play" ? (
+                <PlayArrow />
             ) : (
                 "Icon"
             )}
+            {/* <ButtonType type={type} /> */}
         </button>
     );
 }
@@ -47,6 +62,10 @@ AltButton.propTypes = {
      * Which button type?
      */
     type: PropTypes.oneOf(["navLeft", "navRight", "add", "play"]),
+    /**
+     * Size
+     */
+    size: PropTypes.oneOf(["small", "medium", "large"]),
     /**
      * Button contents
      */

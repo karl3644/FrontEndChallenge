@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "@/components/common/button/Button.scss";
+import "@/components/common/button/Button.module.scss";
 
 export default function Button({
     buttonStyle,
