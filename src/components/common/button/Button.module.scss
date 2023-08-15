@@ -11,12 +11,16 @@
     border: 0;
     // TODO - add to global color theme
     background-color: rgb(255, 255, 255);
-    & .buttonText {
+    .buttonText {
         display: flex;
         align-items: center;
         min-block-size: 30px;
         color: black;
     }
+}
+
+.primary {
+    @extend .button;
 }
 
 .secondary {
@@ -25,13 +29,13 @@
     &:hover {
         border: 1px solid rgb(255, 255, 255);
     }
-    & .buttonText {
+    .buttonText {
         color: rgb(255, 255, 255);
     }
 }
 .tertiary {
     background-color: rgb(0, 0, 0, 0);
-    & .buttonText {
+    .buttonText {
         color: rgb(167, 167, 167);
         &:hover {
             color: rgb(255, 255, 255);
@@ -42,13 +46,19 @@
 // Sizes - medium is default at 1 scale
 .small {
     padding: 3px 16px;
-    & .buttonText {
+    .buttonText {
         font-size: 14px;
+    }
+}
+.medium {
+    padding: 8px 30px;
+    .buttonText {
+        font-size: 16px;
     }
 }
 .large {
     padding: 10px 40px;
-    & .buttonText {
+    .buttonText {
         font-size: 18px;
     }
 }

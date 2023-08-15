@@ -1,26 +1,26 @@
 import PropTypes from "prop-types";
-import "@/components/common/altButton/AltButton.module.scss";
+import styles from "@/components/common/altButton/AltButton.module.scss";
 
 import { ReactComponent as Left } from "@/assets/svg/chevron_left_white_18dp.svg";
 import { ReactComponent as Right } from "@/assets/svg/chevron_right_white_18dp.svg";
 import { ReactComponent as Add } from "@/assets/svg/add.svg";
 import { ReactComponent as PlayArrow } from "@/assets/svg/playArrow.svg";
 
-function ButtonType({ type }) {
-    if (type === "navLeft") {
-        return <Left />;
-    }
-    if (type === "navRight") {
-        return <Right />;
-    }
-    if (type === "add") {
-        return <Add />;
-    }
-    if (type === "play") {
-        return <PlayArrow />;
-    }
-    return "";
-}
+// function ButtonType({ type }) {
+//     if (type === "navLeft") {
+//         return <Left />;
+//     }
+//     if (type === "navRight") {
+//         return <Right />;
+//     }
+//     if (type === "add") {
+//         return <Add />;
+//     }
+//     if (type === "play") {
+//         return <PlayArrow />;
+//     }
+//     return "";
+// }
 
 export default function AltButton({
     buttonStyle,
@@ -34,7 +34,7 @@ export default function AltButton({
         <button
             type="button"
             style={buttonStyle}
-            className={`${type}Button ${size}`}
+            className={`${styles[type]} ${styles[size]}`}
             onClick={onClick}
         >
             {type === "navLeft" ? (

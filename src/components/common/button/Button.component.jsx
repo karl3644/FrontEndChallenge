@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "@/components/common/button/Button.module.scss";
+import styles from "@/components/common/button/Button.module.scss";
 
 export default function Button({
     buttonStyle,
@@ -14,10 +14,10 @@ export default function Button({
         <button
             type="button"
             style={buttonStyle}
-            className={`button ${size} ${type}`}
+            className={`${styles.button} ${styles[size]} ${styles[type]}`}
             onClick={onClick}
         >
-            <span className="buttonText">{label}</span>
+            <span className={`${styles.buttonText}`}>{label}</span>
         </button>
     );
 }
