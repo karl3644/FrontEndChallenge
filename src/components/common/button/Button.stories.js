@@ -25,21 +25,18 @@ export const Primary = {
         label: "Primary",
         type: "primary",
     },
-    parameters: {},
 };
 export const Secondary = {
     args: {
         label: "Secondary",
         type: "secondary",
     },
-    parameters: {},
 };
 export const Tertiary = {
     args: {
         label: "Tertiary",
         type: "tertiary",
     },
-    parameters: {},
 };
 export const Large = {
     args: {
