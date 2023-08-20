@@ -1,4 +1,5 @@
 import Text from "@/components/common/text/Text.component.jsx";
+import "@/App.scss";
 
 export default {
     title: "Text",
@@ -53,7 +54,7 @@ export const h3 = {
 export const h4 = {
     args: {
         type: "h4",
-        children: "This is a h4",
+        children: "This is a fh4",
     },
 };
 export const h5 = {
