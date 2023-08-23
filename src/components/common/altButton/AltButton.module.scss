@@ -13,6 +13,12 @@
 .navRight {
     @extend .button;
 }
+.disabled {
+    @extend .button;
+    opacity: 0.5;
+    // cursor: not-allowed;
+    border: 2px green solid;
+}
 .add {
     @extend .button;
     border: rgb(0, 0, 0, 0);

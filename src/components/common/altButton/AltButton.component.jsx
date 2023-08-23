@@ -29,12 +29,13 @@ export default function AltButton({
     },
     size = "medium",
     type = "navLeft",
+    // disabled = true,
 }) {
     return (
         <button
             type="button"
             style={buttonStyle}
-            className={`${styles[type]} ${styles[size]}`}
+            className={`${styles[type]} ${styles[size]} ${styles.disabled}}`}
             onClick={onClick}
         >
             {type === "navLeft" ? (
@@ -69,7 +70,7 @@ AltButton.propTypes = {
     /**
      * Button contents
      */
-    symbol: PropTypes.string.isRequired,
+    disabled: PropTypes.bool,
     /**
      * Optional click handler
      */

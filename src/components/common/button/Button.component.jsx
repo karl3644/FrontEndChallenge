@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import styles from "@/components/common/button/Button.module.scss";
+import { ReactComponent as Add } from "@/assets/svg/add.svg";
 
 export default function Button({
     buttonStyle,
@@ -9,6 +10,8 @@ export default function Button({
     label = "Button",
     size = "medium",
     type = "primary",
+    withSvg = false,
+    svg = <Add />,
 }) {
     return (
         <button
@@ -17,7 +20,10 @@ export default function Button({
             className={`${styles.button} ${styles[size]} ${styles[type]}`}
             onClick={onClick}
         >
-            <span className={`${styles.buttonText}`}>{label}</span>
+            <span className={`${styles.buttonText}`}>
+                {withSvg ? <Add /> : null}
+                {label}
+            </span>
         </button>
     );
 }

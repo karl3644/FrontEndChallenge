@@ -1,4 +1,5 @@
 import Button from "@/components/common/button/Button.component.jsx";
+import { ReactComponent as Add } from "@/assets/svg/add.svg";
 
 export default {
     title: "Button",
@@ -24,24 +25,28 @@ export const Primary = {
     args: {
         label: "Primary",
         type: "primary",
+        withSvg: false,
     },
 };
 export const Secondary = {
     args: {
         label: "Secondary",
         type: "secondary",
+        withSvg: false,
     },
 };
 export const Tertiary = {
     args: {
         label: "Tertiary",
         type: "tertiary",
+        withSvg: false,
     },
 };
 export const Large = {
     args: {
         size: "large",
         label: "Large",
+        withSvg: false,
     },
 };
 
@@ -49,5 +54,16 @@ export const Small = {
     args: {
         size: "small",
         label: "Small",
+        type: "primary",
+        withSvg: false,
+    },
+};
+export const WithSvg = {
+    args: {
+        size: "small",
+        label: "Small",
+        type: "secondary",
+        withSvg: true,
+        // svg: <Add />,
     },
 };

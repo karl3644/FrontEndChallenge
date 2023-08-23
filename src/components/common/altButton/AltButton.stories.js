@@ -23,6 +23,7 @@ export default {
 export const NavLeft = {
     args: {
         type: "navLeft",
+        disabled: true,
     },
     parameters: {},
 };

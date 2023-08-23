@@ -17,10 +17,19 @@
         min-block-size: 30px;
         color: black;
     }
+    svg {
+        fill: rgb(255, 255, 255);
+        height: 20px;
+        width: 20px;
+        padding: 0 5px 0 0;
+    }
 }
 
 .primary {
     @extend .button;
+    svg {
+        fill: rgb(0, 0, 0);
+    }
 }
 
 .secondary {
@@ -55,10 +64,20 @@
     .buttonText {
         font-size: 16px;
     }
+    svg {
+        height: 30px;
+        width: 30px;
+        padding: 0 12px 0 0;
+    }
 }
 .large {
     padding: 10px 40px;
     .buttonText {
         font-size: 18px;
+    }
+    svg {
+        height: 40px;
+        width: 40px;
+        padding: 0 12px 0 0;
     }
 }
