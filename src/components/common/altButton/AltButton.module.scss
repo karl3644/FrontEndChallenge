@@ -2,6 +2,9 @@
     background-color: rgba(0, 0, 0, 0.7);
     border: none;
     border-radius: 50%;
+    & :hover {
+        cursor: pointer;
+    }
     & svg {
         width: 100%;
         height: 100%;
@@ -12,12 +15,6 @@
 }
 .navRight {
     @extend .button;
-}
-.disabled {
-    @extend .button;
-    opacity: 0.5;
-    // cursor: not-allowed;
-    border: 2px green solid;
 }
 .add {
     @extend .button;
@@ -53,4 +50,12 @@
 .large {
     width: 45px;
     height: 45px;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed !important;
+    & svg {
+        cursor: not-allowed !important;
+    }
 }

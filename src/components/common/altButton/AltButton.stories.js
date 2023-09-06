@@ -23,25 +23,30 @@ export default {
 export const NavLeft = {
     args: {
         type: "navLeft",
-        disabled: true,
+        disabled: false,
     },
-    parameters: {},
 };
 export const NavRight = {
     args: {
         type: "navRight",
+        disabled: false,
     },
-    parameters: {},
 };
 export const Add = {
     args: {
         type: "add",
+        disabled: false,
     },
-    parameters: {},
 };
 export const Play = {
     args: {
         type: "play",
+        disabled: false,
     },
-    parameters: {},
+};
+export const Disabled = {
+    args: {
+        type: "navRight",
+        disabled: true,
+    },
 };

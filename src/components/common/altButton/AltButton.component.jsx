@@ -29,14 +29,16 @@ export default function AltButton({
     },
     size = "medium",
     type = "navLeft",
-    // disabled = true,
+    disabled = false,
 }) {
     return (
         <button
             type="button"
             style={buttonStyle}
-            className={`${styles[type]} ${styles[size]} ${styles.disabled}}`}
-            onClick={onClick}
+            className={`${styles[type]} ${styles[size]} ${
+                disabled ? styles.disabled : null
+            }`}
+            onClick={!disabled ? onClick : null}
         >
             {type === "navLeft" ? (
                 <Left />
