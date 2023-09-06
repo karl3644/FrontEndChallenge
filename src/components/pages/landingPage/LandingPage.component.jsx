@@ -1,5 +1,5 @@
-import Button from "@/components/common/button/Button.component.jsx";
-import Text from "@/components/common/text/Text.component.jsx";
+import Button from "@/components/common/Button/Button.component.jsx";
+import Text from "@/components/common/Text/Text.component.jsx";
 
 export default function LandingPage() {
     return (

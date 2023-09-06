@@ -1,7 +1,6 @@
 # To do
 
 - add burger menu as svg
-- add icons into button
 - add active/inactive nav button states
 - adding margin to text instead of padding? to fix svg off sizing
 

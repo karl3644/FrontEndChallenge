@@ -1,4 +1,4 @@
-import Text from "@/components/common/text/Text.component.jsx";
+import Text from "@/components/common/Text/Text.component.jsx";
 import "@/App.scss";
 
 export default {
@@ -25,47 +25,55 @@ export const Paragraph = {
     args: {
         type: "p",
         children: "This is a paragraph",
+        active: true,
     },
 };
 export const Span = {
     args: {
         type: "span",
         children: "This is a span",
+        active: false,
     },
 };
 export const h1 = {
     args: {
         type: "h1",
         children: "This is a h1",
+        active: false,
     },
 };
 export const h2 = {
     args: {
         type: "h2",
         children: "This is a h2",
+        active: false,
     },
 };
 export const h3 = {
     args: {
         type: "h3",
         children: "This is a h3",
+        active: false,
     },
 };
 export const h4 = {
     args: {
         type: "h4",
-        children: "This is a fh4",
+        children: "This is a h4",
+        active: false,
     },
 };
 export const h5 = {
     args: {
         type: "h5",
         children: "This is a h5",
+        active: false,
     },
 };
 export const a = {
     args: {
         type: "a",
         children: "This is a a",
+        active: false,
     },
 };

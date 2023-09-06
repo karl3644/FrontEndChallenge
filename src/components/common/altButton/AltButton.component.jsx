@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "@/components/common/altButton/AltButton.module.scss";
+import styles from "@/components/common/AltButton/AltButton.module.scss";
 
 import { ReactComponent as Left } from "@/assets/svg/chevron_left_white_18dp.svg";
 import { ReactComponent as Right } from "@/assets/svg/chevron_right_white_18dp.svg";

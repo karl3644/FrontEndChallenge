@@ -1,30 +1,26 @@
 * {
+    color: #a7a7a7;
+}
+.active {
     color: rgb(255, 255, 255);
-    // font-family: Circular;
 }
-.paragraph {
-    font-family: Circular;
-    color: red;
-}
-.span {
-    color: green;
-}
-.h1 {
-    color: blue;
-}
-.h2 {
-    font-size: 1.5rem;
-}
-.h3 {
-    color: palevioletred;
-}
-.h4 {
-    color: yellow;
-}
-.h5 {
-    color: peru;
-}
+// .paragraph {
+// }
+// .span {
+// }
+// .h1 {
+// }
+// .h2 {
+// }
+// .h3 {
+// }
+// .h4 {
+// }
+// .h5 {
+// }
 .a {
-    color: rgb(50, 50, 50);
     cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
 }
