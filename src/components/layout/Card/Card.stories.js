@@ -18,5 +18,8 @@ export default {
 };
 
 export const Default = {
-    args: {},
+    args: {
+        cardHeading: "Todays Top Hits",
+        cardText: "The biggest hits right now.",
+    },
 };

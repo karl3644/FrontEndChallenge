@@ -26,6 +26,8 @@ export const Paragraph = {
         type: "p",
         children: "This is a paragraph",
         active: true,
+        cardHeading: false,
+        cardText: false,
     },
 };
 export const Span = {
@@ -33,6 +35,8 @@ export const Span = {
         type: "span",
         children: "This is a span",
         active: false,
+        cardHeading: true,
+        cardText: false,
     },
 };
 export const h1 = {
@@ -40,6 +44,8 @@ export const h1 = {
         type: "h1",
         children: "This is a h1",
         active: false,
+        cardHeading: false,
+        cardText: false,
     },
 };
 export const h2 = {
@@ -47,6 +53,8 @@ export const h2 = {
         type: "h2",
         children: "This is a h2",
         active: false,
+        cardHeading: false,
+        cardText: false,
     },
 };
 export const h3 = {
@@ -54,6 +62,8 @@ export const h3 = {
         type: "h3",
         children: "This is a h3",
         active: false,
+        cardHeading: false,
+        cardText: false,
     },
 };
 export const h4 = {
@@ -61,6 +71,8 @@ export const h4 = {
         type: "h4",
         children: "This is a h4",
         active: false,
+        cardHeading: false,
+        cardText: false,
     },
 };
 export const h5 = {
@@ -68,6 +80,8 @@ export const h5 = {
         type: "h5",
         children: "This is a h5",
         active: false,
+        cardHeading: false,
+        cardText: false,
     },
 };
 export const a = {
@@ -75,5 +89,7 @@ export const a = {
         type: "a",
         children: "This is a a",
         active: false,
+        cardHeading: false,
+        cardText: false,
     },
 };

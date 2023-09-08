@@ -5,6 +5,8 @@ export default function Text({
     type = "p",
     children = "Text",
     active = false,
+    cardHeading = false,
+    cardText = false,
 }) {
     switch (type) {
         case "p":
@@ -12,7 +14,10 @@ export default function Text({
                 <p
                     className={`${styles.paragraph} ${
                         active ? styles.active : null
-                    }`}
+                    } 
+                    ${cardHeading ? styles.cardHeading : null}
+                    ${cardText ? styles.cardText : null}
+                    `}
                 >
                     {children}
                 </p>
@@ -22,6 +27,8 @@ export default function Text({
                 <span
                     className={`${styles.span} ${
                         active ? styles.active : null
+                    } ${cardHeading ? styles.cardHeading : null} ${
+                        cardText ? styles.cardText : null
                     }`}
                 >
                     {children}
@@ -29,37 +36,61 @@ export default function Text({
             );
         case "h1":
             return (
-                <h1 className={`${styles.h1} ${active ? styles.active : null}`}>
+                <h1
+                    className={`${styles.h1} ${active ? styles.active : null} ${
+                        cardHeading ? styles.cardHeading : null
+                    } ${cardText ? styles.cardText : null}`}
+                >
                     {children}
                 </h1>
             );
         case "h2":
             return (
-                <h2 className={`${styles.h2} ${active ? styles.active : null}`}>
+                <h2
+                    className={`${styles.h2} ${active ? styles.active : null} ${
+                        cardHeading ? styles.cardHeading : null
+                    } ${cardText ? styles.cardText : null}`}
+                >
                     {children}
                 </h2>
             );
         case "h3":
             return (
-                <h3 className={`${styles.h3} ${active ? styles.active : null}`}>
+                <h3
+                    className={`${styles.h3} ${active ? styles.active : null} ${
+                        cardHeading ? styles.cardHeading : null
+                    } ${cardText ? styles.cardText : null}`}
+                >
                     {children}
                 </h3>
             );
         case "h4":
             return (
-                <h4 className={`${styles.h4} ${active ? styles.active : null}`}>
+                <h4
+                    className={`${styles.h4} ${active ? styles.active : null} ${
+                        cardHeading ? styles.cardHeading : null
+                    } ${cardText ? styles.cardText : null}`}
+                >
                     {children}
                 </h4>
             );
         case "h5":
             return (
-                <h5 className={`${styles.h5} ${active ? styles.active : null}`}>
+                <h5
+                    className={`${styles.h5} ${active ? styles.active : null} ${
+                        cardHeading ? styles.cardHeading : null
+                    } ${cardText ? styles.cardText : null}`}
+                >
                     {children}
                 </h5>
             );
         case "a":
             return (
-                <a className={`${styles.a} ${active ? styles.active : null}`}>
+                <a
+                    className={`${styles.a} ${active ? styles.active : null} ${
+                        cardHeading ? styles.cardHeading : null
+                    } ${cardText ? styles.cardText : null}`}
+                >
                     {children}
                 </a>
             );

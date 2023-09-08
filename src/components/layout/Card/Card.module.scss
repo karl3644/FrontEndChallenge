@@ -1,4 +1,19 @@
 .cardContainer {
-    border: 1px red solid;
+    // border: 1px red solid;
+
+    background-color: #181818;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 210px;
     padding: 16px;
+    width: 100%;
+}
+.cardContent {
+    // border: 1px green solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+    img {
+        border-radius: 8px;
+        width: 100%;
+    }
 }
