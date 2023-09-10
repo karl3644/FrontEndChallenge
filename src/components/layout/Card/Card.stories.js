@@ -1,4 +1,5 @@
 import Card from "@/components/layout/Card/Card.component.jsx";
+import testImage from "@/assets/imgs/test1920x1080jpg.jpg";
 
 export default {
     title: "Card",
@@ -21,5 +22,6 @@ export const Default = {
     args: {
         cardHeading: "Todays Top Hits",
         cardText: "The biggest hits right now.",
+        cardImgSrc: testImage,
     },
 };

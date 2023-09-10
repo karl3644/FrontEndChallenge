@@ -1,4 +1,5 @@
 import styles from "@/components/common/Text/Text.module.scss";
+import { classNameFormatter } from "@/utils/classNameFormatter.js";
 
 export default function Text({
     // withAnchor = false,
@@ -8,92 +9,44 @@ export default function Text({
     cardHeading = false,
     cardText = false,
 }) {
+    const classes = [
+        styles[type],
+        active ? `${styles.active}` : null,
+        cardHeading ? styles.cardHeading : null,
+        cardText ? styles.cardText : null,
+    ];
+
     switch (type) {
         case "p":
-            return (
-                <p
-                    className={`${styles.paragraph} ${
-                        active ? styles.active : null
-                    } 
-                    ${cardHeading ? styles.cardHeading : null}
-                    ${cardText ? styles.cardText : null}
-                    `}
-                >
-                    {children}
-                </p>
-            );
+            return <p className={classNameFormatter(...classes)}>{children}</p>;
         case "span":
             return (
-                <span
-                    className={`${styles.span} ${
-                        active ? styles.active : null
-                    } ${cardHeading ? styles.cardHeading : null} ${
-                        cardText ? styles.cardText : null
-                    }`}
-                >
+                <span className={classNameFormatter(...classes)}>
                     {children}
                 </span>
             );
         case "h1":
             return (
-                <h1
-                    className={`${styles.h1} ${active ? styles.active : null} ${
-                        cardHeading ? styles.cardHeading : null
-                    } ${cardText ? styles.cardText : null}`}
-                >
-                    {children}
-                </h1>
+                <h1 className={classNameFormatter(...classes)}>{children}</h1>
             );
         case "h2":
             return (
-                <h2
-                    className={`${styles.h2} ${active ? styles.active : null} ${
-                        cardHeading ? styles.cardHeading : null
-                    } ${cardText ? styles.cardText : null}`}
-                >
-                    {children}
-                </h2>
+                <h2 className={classNameFormatter(...classes)}>{children}</h2>
             );
         case "h3":
             return (
-                <h3
-                    className={`${styles.h3} ${active ? styles.active : null} ${
-                        cardHeading ? styles.cardHeading : null
-                    } ${cardText ? styles.cardText : null}`}
-                >
-                    {children}
-                </h3>
+                <h3 className={classNameFormatter(...classes)}>{children}</h3>
             );
         case "h4":
             return (
-                <h4
-                    className={`${styles.h4} ${active ? styles.active : null} ${
-                        cardHeading ? styles.cardHeading : null
-                    } ${cardText ? styles.cardText : null}`}
-                >
-                    {children}
-                </h4>
+                <h4 className={classNameFormatter(...classes)}>{children}</h4>
             );
         case "h5":
             return (
-                <h5
-                    className={`${styles.h5} ${active ? styles.active : null} ${
-                        cardHeading ? styles.cardHeading : null
-                    } ${cardText ? styles.cardText : null}`}
-                >
-                    {children}
-                </h5>
+                <h5 className={classNameFormatter(...classes)}>{children}</h5>
             );
         case "a":
-            return (
-                <a
-                    className={`${styles.a} ${active ? styles.active : null} ${
-                        cardHeading ? styles.cardHeading : null
-                    } ${cardText ? styles.cardText : null}`}
-                >
-                    {children}
-                </a>
-            );
+            return <a className={classNameFormatter(...classes)}>{children}</a>;
         default:
             return <p>Not rendered</p>;
     }

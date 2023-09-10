@@ -1,15 +1,19 @@
-import styles from "@/components/layout/Card/Card.module.scss";
+import {
+    cardContainer,
+    cardContent,
+} from "@/components/layout/Card/Card.module.scss";
 import Text from "@/components/common/Text/Text.component.jsx";
+import testImage from "@/assets/imgs/test1920x1080jpg.jpg";
 
 export default function Card({
-    cardImgSrc = "https://via.placeholder.com/150",
+    cardImgSrc = testImage,
     cardHeading,
     cardText,
 }) {
     // add div to be a click handler which take 100% width and height
     return (
-        <div className={styles.cardContainer}>
-            <div className={styles.cardContent}>
+        <div className={cardContainer}>
+            <div className={cardContent}>
                 <img src={cardImgSrc} alt="cardImg" />
                 <Text cardHeading>{cardHeading}</Text>
                 <Text cardText>{cardText}</Text>

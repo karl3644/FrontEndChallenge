@@ -1,7 +1,9 @@
 # To do
 
+- size img passed to card
 - add burger menu as svg
 - adding margin to text instead of padding? to fix svg off sizing
+- add click handler to cover card (100 w 100 h)
 
 - have landing page as login/auth page
 - then home page as main screen which includes outlet etc
