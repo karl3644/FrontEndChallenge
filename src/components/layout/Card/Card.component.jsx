@@ -14,7 +14,9 @@ export default function Card({
     return (
         <div className={cardContainer}>
             <div className={cardContent}>
-                <img src={cardImgSrc} alt="cardImg" />
+                <div className="imgContainer">
+                    <img src={cardImgSrc} alt="cardImg" />
+                </div>
                 <Text cardHeading>{cardHeading}</Text>
                 <Text cardText>{cardText}</Text>
             </div>
