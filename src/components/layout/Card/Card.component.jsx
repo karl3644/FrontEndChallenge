@@ -1,8 +1,12 @@
 import {
     cardContainer,
     cardContent,
+    imgContainer,
+    image,
+    cardAltButton,
 } from "@/components/layout/Card/Card.module.scss";
 import Text from "@/components/common/Text/Text.component.jsx";
+import AltButton from "@/components/common/AltButton/AltButton.component.jsx";
 import testImage from "@/assets/imgs/test1920x1080jpg.jpg";
 
 export default function Card({
@@ -14,8 +18,11 @@ export default function Card({
     return (
         <div className={cardContainer}>
             <div className={cardContent}>
-                <div className="imgContainer">
-                    <img src={cardImgSrc} alt="cardImg" />
+                <div className={imgContainer}>
+                    <img className={image} src={cardImgSrc} alt="cardImg" />
+                    <div className={cardAltButton}>
+                        <AltButton size="large" type="play" />
+                    </div>
                 </div>
                 <Text cardHeading>{cardHeading}</Text>
                 <Text cardText>{cardText}</Text>

@@ -1,27 +1,48 @@
 .cardContainer {
-    background-color: #181818;
+    background: #181818;
     border-radius: 8px;
     box-sizing: border-box;
     max-width: 210px;
     padding: 16px;
     width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background: #282828;
+        .cardAltButton {
+            display: block;
+            opacity: 1;
+            transform: translateY(-8px);
+        }
+    }
 }
 .cardContent {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    div {
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        overflow: clip;
-        max-height: 150px;
-        max-width: 194px;
-    }
-    div > img {
-        max-height: 150px;
-        max-width: 267px;
-    }
+}
+.imgContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    overflow: clip;
+    max-height: 150px;
+    max-width: 194px;
+}
+.image {
+    max-height: 150px;
+    max-width: 267px;
+}
+.cardAltButton {
+    display: inline;
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 8px;
+    transition: all 0.3s ease;
+    background-color: transparent;
 }
