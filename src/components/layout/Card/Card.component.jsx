@@ -14,7 +14,7 @@ export default function Card({
     cardHeading,
     cardText,
 }) {
-    // add div to be a click handler which take 100% width and height
+    // TODO - add div to be a click handler which take 100% width and height
     return (
         <div className={cardContainer}>
             <div className={cardContent}>
