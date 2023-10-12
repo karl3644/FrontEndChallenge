@@ -3,9 +3,8 @@
     gap: 16px;
     width: 100%;
     // 200px is max size of card before adding/removing any additional card
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    // grid-auto-rows: 0;
-    grid-template-rows: 1;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
     overflow-y: hidden;
     // add in variable to match the card itself?
     height: 250px;
