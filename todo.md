@@ -2,6 +2,8 @@
 
 - check TODO tree
 - add burger menu as svg
+- add top6 function to filter out top6 from cardContainerSmall
+- add pause state to altButton
 - adding margin to text instead of padding? to fix svg off sizing - text w/ svg?
 - add click handler to cover card (100 w 100 h)
 

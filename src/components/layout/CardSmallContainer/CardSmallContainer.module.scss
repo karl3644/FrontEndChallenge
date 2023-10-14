@@ -1,0 +1,8 @@
+.cardSmallContainer {
+    border: 1px red solid;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
+    // grid-template-rows: 2;
+    // overflow: hidden;
+}
