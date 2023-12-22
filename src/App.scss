@@ -6,58 +6,58 @@
 @font-face {
     font-family: "Circular";
     font-display: swap;
-    src: url(/src/assets/fonts/CircularStd-Black.otf) format("opentype");
+    src: url(@/assets/fonts/CircularStd-Black.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Circular";
     font-display: swap;
-    src: url(@/src/assets/fonts/CircularStd-BlackItalic.otf) format("opentype");
+    src: url(@/assets/fonts/CircularStd-BlackItalic.otf) format("opentype");
 }
 @font-face {
     font-family: "Circular";
     font-display: swap;
-    src: url(@/src/assets/fonts/CircularStd-Bold.otf) format("opentype");
-}
-
-@font-face {
-    font-family: "Circular";
-    font-display: swap;
-    src: url(@/src/assets/fonts/CircularStd-BoldItalic.otf) format("opentype");
+    src: url(@/assets/fonts/CircularStd-Bold.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Circular";
     font-display: swap;
-    src: url(@/src/assets/fonts/CircularStd-Book.otf) format("opentype");
+    src: url(@/assets/fonts/CircularStd-BoldItalic.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Circular";
     font-display: swap;
-    src: url(@/src/assets/fonts/CircularStd-BookItalic.otf) format("opentype");
+    src: url(@/assets/fonts/CircularStd-Book.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Circular";
     font-display: swap;
-    src: url(@/src/assets/fonts/CircularStd-Light.otf) format("opentype");
+    src: url(@/assets/fonts/CircularStd-BookItalic.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Circular";
     font-display: swap;
-    src: url(@/src/assets/fonts/CircularStd-LightItalic.otf) format("opentype");
+    src: url(@/assets/fonts/CircularStd-Light.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Circular";
     font-display: swap;
-    src: url(@/src/assets/fonts/CircularStd-Medium.otf) format("opentype");
+    src: url(@/assets/fonts/CircularStd-LightItalic.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Circular";
     font-display: swap;
-    src: url(@/src/assets/fonts/CircularStd-MediumItalic.otf) format("opentype");
+    src: url(@/assets/fonts/CircularStd-Medium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Circular";
+    font-display: swap;
+    src: url(@/assets/fonts/CircularStd-MediumItalic.otf) format("opentype");
 }

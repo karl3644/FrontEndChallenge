@@ -10,18 +10,19 @@ export default function Button({
     label = "Button",
     size = "medium",
     type = "primary",
-    withSvg = false,
-    svg = <Add />,
+    // withSvg = false,
+    svg = false,
 }) {
     return (
         <button
+            data-testid="button"
             type="button"
             style={buttonStyle}
             className={`${styles.button} ${styles[size]} ${styles[type]}`}
             onClick={onClick}
         >
             <span className={`${styles.buttonText}`}>
-                {withSvg ? <Add /> : null}
+                {svg ? <Add data-testid="svg" /> : null}
                 {label}
             </span>
         </button>
