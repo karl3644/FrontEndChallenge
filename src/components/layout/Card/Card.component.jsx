@@ -16,12 +16,16 @@ export default function Card({
 }) {
     // TODO - add div to be a click handler which take 100% width and height
     return (
-        <div className={cardContainer}>
+        <div className={cardContainer} data-testid="card">
             <div className={cardContent}>
                 <div className={imgContainer}>
                     <img className={image} src={cardImgSrc} alt="cardImg" />
                     <div className={cardAltButton}>
-                        <AltButton size="large" type="play" />
+                        <AltButton
+                            data-testid="altButton"
+                            size="large"
+                            type="play"
+                        />
                     </div>
                 </div>
                 <Text cardHeading>{cardHeading}</Text>
