@@ -18,36 +18,60 @@ export default function Text({
 
     switch (type) {
         case "p":
-            return <p className={classNameFormatter(...classes)}>{children}</p>;
+            return (
+                <p
+                    data-testid="default"
+                    className={classNameFormatter(...classes)}
+                >
+                    {children}
+                </p>
+            );
         case "span":
             return (
-                <span className={classNameFormatter(...classes)}>
+                <span
+                    data-testid="span"
+                    className={classNameFormatter(...classes)}
+                >
                     {children}
                 </span>
             );
         case "h1":
             return (
-                <h1 className={classNameFormatter(...classes)}>{children}</h1>
+                <h1 data-testid="h1" className={classNameFormatter(...classes)}>
+                    {children}
+                </h1>
             );
         case "h2":
             return (
-                <h2 className={classNameFormatter(...classes)}>{children}</h2>
+                <h2 data-testid="h2" className={classNameFormatter(...classes)}>
+                    {children}
+                </h2>
             );
         case "h3":
             return (
-                <h3 className={classNameFormatter(...classes)}>{children}</h3>
+                <h3 data-testid="h3" className={classNameFormatter(...classes)}>
+                    {children}
+                </h3>
             );
         case "h4":
             return (
-                <h4 className={classNameFormatter(...classes)}>{children}</h4>
+                <h4 data-testid="h4" className={classNameFormatter(...classes)}>
+                    {children}
+                </h4>
             );
         case "h5":
             return (
-                <h5 className={classNameFormatter(...classes)}>{children}</h5>
+                <h5 data-testid="h5" className={classNameFormatter(...classes)}>
+                    {children}
+                </h5>
             );
         case "a":
-            return <a className={classNameFormatter(...classes)}>{children}</a>;
+            return (
+                <a data-testid="a" className={classNameFormatter(...classes)}>
+                    {children}
+                </a>
+            );
         default:
-            return <p>Not rendered</p>;
+            return <p data-testid="notRendered">Not rendered</p>;
     }
 }
