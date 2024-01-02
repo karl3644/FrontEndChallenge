@@ -33,6 +33,7 @@ export default function AltButton({
 }) {
     return (
         <button
+            data-testid="altButton"
             type="button"
             style={buttonStyle}
             className={`${styles[type]} ${styles[size]} ${
@@ -41,13 +42,13 @@ export default function AltButton({
             onClick={!disabled ? onClick : null}
         >
             {type === "navLeft" ? (
-                <Left />
+                <Left data-testid="navLeft" />
             ) : type === "navRight" ? (
-                <Right />
+                <Right data-testid="navRight" />
             ) : type === "add" ? (
-                <Add />
+                <Add data-testid="add" />
             ) : type === "play" ? (
-                <PlayArrow />
+                <PlayArrow data-testid="play" />
             ) : (
                 "Icon"
             )}

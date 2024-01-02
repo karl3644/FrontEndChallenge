@@ -1,14 +1,12 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import "@testing-library/jest-dom/vitest";
-
-import { describe, expect, test } from "vitest";
-
 import Button from "@/components/common/Button/Button.component.jsx";
+import { describe, expect, test } from "vitest";
+import { render, fireEvent } from "@testing-library/react";
+import "@testing-library/jest-dom/vitest";
 
 describe("Button", () => {
     test("renders", () => {
         const { getByTestId, debug } = render(<Button label="label" />);
-        // debug(); // shows html in terminal
+        debug(); // shows html in terminal
         expect(getByTestId("button")).toBeDefined();
     });
     test("displays label props", () => {
