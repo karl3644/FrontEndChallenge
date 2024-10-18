@@ -72,6 +72,6 @@ export default function Text({
                 </a>
             );
         default:
-            return <p data-testid="notRendered">Not rendered</p>;
+            return <p data-testid="notRendered"></p>;
     }
 }
