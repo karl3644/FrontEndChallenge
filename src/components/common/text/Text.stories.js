@@ -1,4 +1,4 @@
-import Text from "@/components/common/Text/Text.component.jsx";
+import Text from "@/components/common/text/Text.component.jsx";
 import "@/App.scss";
 
 export default {

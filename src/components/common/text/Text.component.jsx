@@ -1,4 +1,4 @@
-import styles from "@/components/common/Text/Text.module.scss";
+import styles from "@/components/common/text/Text.module.scss";
 import { classNameFormatter } from "@/utils/classNameFormatter.js";
 
 export default function Text({

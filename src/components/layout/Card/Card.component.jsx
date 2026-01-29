@@ -5,8 +5,8 @@ import {
     image,
     cardAltButton,
 } from "@/components/layout/Card/Card.module.scss";
-import Text from "@/components/common/Text/Text.component.jsx";
-import AltButton from "@/components/common/AltButton/AltButton.component.jsx";
+import Text from "@/components/common/text/Text.component.jsx";
+import AltButton from "@/components/common/altButton/AltButton.component.jsx";
 import testImage from "@/assets/imgs/test1920x1080jpg.jpg";
 
 export default function Card({

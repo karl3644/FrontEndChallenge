@@ -1,4 +1,4 @@
-import AltButton from "@/components/common/AltButton/AltButton.component.jsx";
+import AltButton from "@/components/common/altButton/AltButton.component.jsx";
 import { describe, expect, test } from "vitest";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";

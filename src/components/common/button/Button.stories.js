@@ -1,4 +1,4 @@
-import Button from "@/components/common/Button/Button.component.jsx";
+import Button from "@/components/common/button/Button.component.jsx";
 import { ReactComponent as Add } from "@/assets/svg/add.svg";
 
 export default {

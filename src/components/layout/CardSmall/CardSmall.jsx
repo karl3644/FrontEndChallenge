@@ -4,9 +4,9 @@ import {
     textButtonDiv,
     buttonDiv,
 } from "@/components/layout/CardSmall/CardSmall.module.scss";
-import Text from "@/components/common/Text/Text.component.jsx";
+import Text from "@/components/common/text/Text.component.jsx";
 import testImage from "@/assets/imgs/test1920x1080jpg.jpg";
-import AltButton from "@/components/common/AltButton/AltButton.component.jsx";
+import AltButton from "@/components/common/altButton/AltButton.component.jsx";
 
 export default function CardSmall({
     cardText = "Default Card Text",

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "@/components/common/Button/Button.module.scss";
+import styles from "@/components/common/button/Button.module.scss";
 import { ReactComponent as Add } from "@/assets/svg/add.svg";
 
 export default function Button({

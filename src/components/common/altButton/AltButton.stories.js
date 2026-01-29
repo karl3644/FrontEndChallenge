@@ -1,4 +1,4 @@
-import AltButton from "@/components/common/AltButton/AltButton.component.jsx";
+import AltButton from "@/components/common/altButton/AltButton.component.jsx";
 
 export default {
     title: "AltButton",

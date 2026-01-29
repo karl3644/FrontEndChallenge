@@ -1,4 +1,4 @@
-import Button from "@/components/common/Button/Button.component.jsx";
+import Button from "@/components/common/button/Button.component.jsx";
 import { describe, expect, test } from "vitest";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";

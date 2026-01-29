@@ -1,4 +1,4 @@
-import Text from "@/components/common/Text/Text.component.jsx";
+import Text from "@/components/common/text/Text.component.jsx";
 import { describe, expect, test } from "vitest";
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
